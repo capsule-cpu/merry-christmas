@@ -2,7 +2,7 @@
 body {
     margin: 0;
 
-    height: 130vh;
+    height: 180vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,4 +87,30 @@ button {
 }
 button:hover {
     background-color: #eab308;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    #box {
+        padding: 16px;
+    }
+
+    #top-box h1 {
+        font-size: 1.8rem;
+    }
+
+
+    #bot-box {
+        grid-template-columns: 1fr;   /* 1 image per row */
+        gap: 12px;
+    }
+
+    .opt img {
+        height: 160px;   /* smaller images for phone */
+    }
 }
