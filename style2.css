@@ -1,0 +1,90 @@
+/* Page center */
+body {
+    margin: 0;
+
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7c3aed; /* festive purple */
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+#box {
+    background: #fde2f3;
+    padding: 30px;
+    border-radius: 20px;
+    /* max-width: 900px; */
+    width: 60%;
+
+}
+
+/* .emg{
+    width: 10%;
+    object-fit: contain;
+} */
+
+/* Top text */
+#top-box {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#top-box h1 {
+    color: #4c1d95;
+    font-size: 3rem;
+}
+
+/* Bottom grid */
+#bot-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Each option box */
+#bot-box > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+#bot-box > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Images */
+
+
+#bot-box img {
+    width: 100%;
+    height: 100%;          
+    object-fit: contain;
+    /* border-radius: 8px; */
+}
+pre{
+    font-size: large;
+}
+
+button {
+    background-color: #facc15; /* gold */
+    color: #4c1d95;            /* dark purple text */
+    border:2px black 2px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #eab308;
+}
